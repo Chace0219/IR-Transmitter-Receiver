@@ -1,0 +1,837 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Emitter.X.production.obj
+cinit CODE 0 21 21 12 2
+text1 CODE 0 22A 22A 3 2
+text2 CODE 0 222 222 4 2
+text3 CODE 0 1D4 1D4 B 2
+text4 CODE 0 112 112 1C 2
+text5 CODE 0 12E 12E 1B 2
+text6 CODE 0 226 226 4 2
+text7 CODE 0 1EA 1EA 9 2
+text8 CODE 0 22D 22D 3 2
+text9 CODE 0 164 164 1A 2
+nvCOMMON COMMON 1 77 77 2 1
+text10 CODE 0 230 230 3 2
+text11 CODE 0 20B 20B 6 2
+text12 CODE 0 17E 17E 15 2
+text13 CODE 0 211 211 6 2
+text14 CODE 0 149 149 1B 2
+text15 CODE 0 217 217 6 2
+text16 CODE 0 21D 21D 5 2
+text17 CODE 0 1B0 1B0 C 2
+text18 CODE 0 1BC 1BC C 2
+text19 CODE 0 1C8 1C8 C 2
+text20 CODE 0 1FC 1FC 8 2
+text21 CODE 0 233 233 3 2
+text23 CODE 0 1F3 1F3 9 2
+text24 CODE 0 1DF 1DF B 2
+text25 CODE 0 238 238 1 2
+text26 CODE 0 82 82 4D 2
+text27 CODE 0 193 193 F 2
+text28 CODE 0 1A2 1A2 E 2
+text29 CODE 0 33 33 4F 2
+text30 CODE 0 239 239 1 2
+text31 CODE 0 204 204 7 2
+nvBANK0 BANK0 1 28 28 7 1
+idataCOMMON CODE 0 236 236 2 2
+maintext CODE 0 CF CF 43 2
+cstackCOMMON COMMON 1 70 70 7 1
+cstackBANK0 BANK0 1 20 20 8 1
+intentry CODE 0 4 4 1B 2
+bssBANK0 BANK0 1 2F 2F 5 1
+dataCOMMON COMMON 1 7B 7B 2 1
+bssCOMMON COMMON 1 79 79 2 1
+$C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 1F 1F 2 2
+config CONFIG 0 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 34-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+BANK0 34-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+CONST 2-3 2
+CONST 23A-FFF 2
+ENTRY 2-3 2
+ENTRY 23A-FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2014-20EF 1
+CODE 2-3 2
+CODE 23A-FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-1EF 1
+SFR4 200-26F 1
+SFR5 280-2EF 1
+SFR6 300-36F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-20EF 1
+COMMON 7D-7D 1
+EEDATA F000-F0FF 2
+STRCODE 2-3 2
+STRCODE 23A-FFF 2
+STRING 2-3 2
+STRING 23A-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Emitter.X.production.obj
+21 cinit CODE >2813:C:\Users\Embedded\AppData\Local\Temp\sdks.
+21 cinit CODE >2816:C:\Users\Embedded\AppData\Local\Temp\sdks.
+21 cinit CODE >2848:C:\Users\Embedded\AppData\Local\Temp\sdks.
+24 cinit CODE >2849:C:\Users\Embedded\AppData\Local\Temp\sdks.
+25 cinit CODE >2850:C:\Users\Embedded\AppData\Local\Temp\sdks.
+27 cinit CODE >2851:C:\Users\Embedded\AppData\Local\Temp\sdks.
+28 cinit CODE >2856:C:\Users\Embedded\AppData\Local\Temp\sdks.
+29 cinit CODE >2857:C:\Users\Embedded\AppData\Local\Temp\sdks.
+2A cinit CODE >2861:C:\Users\Embedded\AppData\Local\Temp\sdks.
+2B cinit CODE >2862:C:\Users\Embedded\AppData\Local\Temp\sdks.
+2C cinit CODE >2863:C:\Users\Embedded\AppData\Local\Temp\sdks.
+2D cinit CODE >2864:C:\Users\Embedded\AppData\Local\Temp\sdks.
+2E cinit CODE >2865:C:\Users\Embedded\AppData\Local\Temp\sdks.
+2F cinit CODE >2871:C:\Users\Embedded\AppData\Local\Temp\sdks.
+2F cinit CODE >2873:C:\Users\Embedded\AppData\Local\Temp\sdks.
+30 cinit CODE >2874:C:\Users\Embedded\AppData\Local\Temp\sdks.
+31 cinit CODE >2875:C:\Users\Embedded\AppData\Local\Temp\sdks.
+4 intentry CODE >51:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/interrupt_manager.c
+9 intentry CODE >54:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/interrupt_manager.c
+C intentry CODE >56:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/interrupt_manager.c
+F intentry CODE >57:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/interrupt_manager.c
+10 intentry CODE >58:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/interrupt_manager.c
+18 intentry CODE >60:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/interrupt_manager.c
+1A intentry CODE >66:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/interrupt_manager.c
+204 text31 CODE >124:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+204 text31 CODE >126:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+207 text31 CODE >127:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+209 text31 CODE >129:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+239 text30 CODE >129:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+239 text30 CODE >132:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+33 text29 CODE >71:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+33 text29 CODE >74:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+36 text29 CODE >77:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+3C text29 CODE >81:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+40 text29 CODE >83:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+42 text29 CODE >84:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+43 text29 CODE >85:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+44 text29 CODE >88:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+48 text29 CODE >90:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+49 text29 CODE >91:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+4D text29 CODE >93:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+53 text29 CODE >94:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+5F text29 CODE >95:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+64 text29 CODE >97:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+68 text29 CODE >98:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+6C text29 CODE >99:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+6D text29 CODE >100:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+71 text29 CODE >102:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+77 text29 CODE >104:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+7C text29 CODE >105:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+7D text29 CODE >106:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+7E text29 CODE >109:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+80 text29 CODE >110:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+81 text29 CODE >113:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+1A2 text28 CODE >108:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+1A2 text28 CODE >112:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+1A3 text28 CODE >114:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+1A6 text28 CODE >116:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+1AA text28 CODE >118:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+193 text27 CODE >77:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+193 text27 CODE >79:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+196 text27 CODE >82:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+197 text27 CODE >85:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+199 text27 CODE >86:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+19B text27 CODE >89:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+19C text27 CODE >90:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+19D text27 CODE >94:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+19F text27 CODE >95:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+82 text26 CODE >37:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+82 text26 CODE >40:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+85 text26 CODE >43:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+9F text26 CODE >45:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+A0 text26 CODE >46:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+A2 text26 CODE >47:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+A3 text26 CODE >50:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+A7 text26 CODE >51:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+AB text26 CODE >53:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+BA text26 CODE >54:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+BC text26 CODE >55:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+BD text26 CODE >58:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+CC text26 CODE >59:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+CE text26 CODE >60:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+238 text25 CODE >143:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+238 text25 CODE >146:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1DF text24 CODE >130:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1DF text24 CODE >133:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1E4 text24 CODE >135:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1F3 text23 CODE >116:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1F3 text23 CODE >120:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1F5 text23 CODE >122:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1F7 text23 CODE >123:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1F9 text23 CODE >127:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+1FB text23 CODE >128:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+233 text21 CODE >103:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+233 text21 CODE >106:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+235 text21 CODE >107:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1FC text20 CODE >96:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1FE text20 CODE >98:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1FE text20 CODE >100:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+200 text20 CODE >102:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+203 text20 CODE >103:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1C8 text19 CODE >57:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1C8 text19 CODE >62:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1CA text19 CODE >65:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1CB text19 CODE >68:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1CC text19 CODE >71:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1CE text19 CODE >74:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1D0 text19 CODE >77:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1D2 text19 CODE >81:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1D3 text19 CODE >83:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/dsm.c
+1BC text18 CODE >24:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1BC text18 CODE >29:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1BF text18 CODE >32:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1C0 text18 CODE >35:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1C2 text18 CODE >38:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1C4 text18 CODE >41:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1C6 text18 CODE >44:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1C7 text18 CODE >46:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/epwm.c
+1B0 text17 CODE >55:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1B0 text17 CODE >60:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1B3 text17 CODE >63:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1B5 text17 CODE >66:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1B7 text17 CODE >69:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1B9 text17 CODE >72:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+1BB text17 CODE >74:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/eusart.c
+21D text16 CODE >83:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+21D text16 CODE >86:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+220 text16 CODE >88:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+221 text16 CODE >89:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+217 text15 CODE >127:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+217 text15 CODE >128:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+21C text15 CODE >129:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+149 text14 CODE >53:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+149 text14 CODE >58:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+14B text14 CODE >63:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+14E text14 CODE >68:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+151 text14 CODE >73:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+154 text14 CODE >74:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+156 text14 CODE >80:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+158 text14 CODE >86:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+15A text14 CODE >88:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+15B text14 CODE >90:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+15C text14 CODE >93:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+163 text14 CODE >96:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/pin_manager.c
+211 text13 CODE >125:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+211 text13 CODE >126:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+216 text13 CODE >127:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+17E text12 CODE >63:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+17E text12 CODE >68:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+183 text12 CODE >71:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+186 text12 CODE >74:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+18A text12 CODE >77:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+18B text12 CODE >80:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+18C text12 CODE >83:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+192 text12 CODE >84:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr0.c
+20B text11 CODE >139:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+20B text11 CODE >140:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+210 text11 CODE >141:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+230 text10 CODE >56:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+230 text10 CODE >59:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+232 text10 CODE >60:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+164 text9 CODE >24:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+164 text9 CODE >29:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+167 text9 CODE >32:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+168 text9 CODE >35:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+16A text9 CODE >38:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+16C text9 CODE >41:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+170 text9 CODE >44:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+171 text9 CODE >47:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+173 text9 CODE >50:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+17B text9 CODE >53:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+17D text9 CODE >54:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr1.c
+22D text8 CODE >43:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+22D text8 CODE >46:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+22F text8 CODE >47:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+1EA text7 CODE >23:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+1EA text7 CODE >28:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+1EC text7 CODE >31:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+1EE text7 CODE >34:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+1EF text7 CODE >37:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+1F0 text7 CODE >40:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+1F2 text7 CODE >41:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/tmr2.c
+226 text6 CODE >91:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+226 text6 CODE >94:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+229 text6 CODE >95:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+12E text5 CODE >69:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+12E text5 CODE >72:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+131 text5 CODE >73:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+134 text5 CODE >74:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+137 text5 CODE >75:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+13A text5 CODE >76:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+13D text5 CODE >77:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+140 text5 CODE >78:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+143 text5 CODE >79:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+146 text5 CODE >80:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+148 text5 CODE >81:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\mcc_generated_files/mcc.c
+112 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+112 text4 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+115 text4 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+117 text4 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+11B text4 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+120 text4 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+125 text4 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+129 text4 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+1D4 text3 CODE >116:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+1D4 text3 CODE >118:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+1D6 text3 CODE >119:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+1D7 text3 CODE >120:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+1D8 text3 CODE >121:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+1DE text3 CODE >122:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+222 text2 CODE >137:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+222 text2 CODE >139:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+224 text2 CODE >140:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+22A text1 CODE >132:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+22A text1 CODE >134:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+CF maintext CODE >146:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+CF maintext CODE >149:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+D2 maintext CODE >155:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+D3 maintext CODE >158:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+D4 maintext CODE >159:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+D6 maintext CODE >161:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+DE maintext CODE >163:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+E1 maintext CODE >167:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+E7 maintext CODE >169:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+EE maintext CODE >170:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+F6 maintext CODE >171:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+109 maintext CODE >173:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+10C maintext CODE >174:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+111 maintext CODE >165:D:\Upwork History\2017\05\20170419_PIC\Emitter.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+_TMR1_Routine 104 0 CODE 0 text26 dist/default/production\Emitter.X.production.obj
+_PWM1CON 294 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+main@nCommand 27 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_T1CONbits 18 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_WDT_Initialize 454 0 CODE 0 text6 dist/default/production\Emitter.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_LATA 10C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR0 15 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR2 1A 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_WPUA 20C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+_main 19E 0 CODE 0 maintext dist/default/production\Emitter.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+start 3E 0 CODE 0 init C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+_EUSART_Write 3F8 0 CODE 0 text20 dist/default/production\Emitter.X.production.obj
+_TMR0_InterruptHandler 28 0 BANK0 1 nvBANK0 dist/default/production\Emitter.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_TMR0_SetInterruptHandler 42E 0 CODE 0 text13 dist/default/production\Emitter.X.production.obj
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_EUSART_Initialize 378 0 CODE 0 text17 dist/default/production\Emitter.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_TMR1_StartTimer 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_TMR1_WriteTimer 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR2_Initialize 3D4 0 CODE 0 text7 dist/default/production\Emitter.X.production.obj
+_TMR2_StartTimer 45A 0 CODE 0 text8 dist/default/production\Emitter.X.production.obj
+__size_of_TMR1_Routine 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__LnvCOMMON 0 0 ABS 0 nvCOMMON -
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+TMR0_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+__size_of_IOCAF5_SetInterruptHandler 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__size_of_EPWM_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__size_of_TMR1_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__pidataCOMMON 46C 0 CODE 0 idataCOMMON dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_Routine 19E 0 CODE 0 text26 dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_DefaultInterruptHandler 472 0 CODE 0 text25 dist/default/production\Emitter.X.production.obj
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_APFCON 11D 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR0_DefaultInterruptHandler 472 0 CODE 0 text30 dist/default/production\Emitter.X.production.obj
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_CCPR1H 292 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_CCPR1L 291 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_INTERRUPT_InterruptManager 3E 0 CODE 0 intentry dist/default/production\Emitter.X.production.obj
+__size_of_TMR1_SetInterruptHandler 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of___wmul 25C 0 CODE 0 text4 dist/default/production\Emitter.X.production.obj
+__end_of_EUSART_Write 408 0 CODE 0 text20 dist/default/production\Emitter.X.production.obj
+_IOCAF5_InterruptHandler 2C 0 BANK0 1 nvBANK0 dist/default/production\Emitter.X.production.obj
+__size_of_DSM_ModulationStart 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_IOCAF5_SetInterruptHandler 42E 0 CODE 0 text15 dist/default/production\Emitter.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+_OPTION_REG 95 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_EUSART_Initialize 360 0 CODE 0 text17 dist/default/production\Emitter.X.production.obj
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+_MDCARH 39F 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_MDCARL 39E 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__HnvCOMMON 0 0 ABS 0 nvCOMMON -
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_TMR2_StartTimer 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_PIN_MANAGER_Initialize 292 0 CODE 0 text14 dist/default/production\Emitter.X.production.obj
+start_initialization 42 0 CODE 0 cinit dist/default/production\Emitter.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_DSM_ModulationStart 466 0 CODE 0 text21 dist/default/production\Emitter.X.production.obj
+_IOCAF5_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_SYSTEM_Initialize 292 0 CODE 0 text5 dist/default/production\Emitter.X.production.obj
+_SPBRGH 19C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_SPBRGL 19B 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+_T1GCON 19 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_TMR0_CustomISR 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_MDCONbits 39C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_SetInterruptHandler 422 0 CODE 0 text11 dist/default/production\Emitter.X.production.obj
+_WDTCON 97 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_DSM_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_getSoftRX 416 0 CODE 0 text31 dist/default/production\Emitter.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Hbank4 0 0 BANK4 1 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 66 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__size_of_getSoftRX 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+_softUartReady 454 0 CODE 0 text1 dist/default/production\Emitter.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 BANK3 1 bank3 -
+__Lbank4 0 0 BANK4 1 bank4 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 42 0 CODE 0 cinit -
+_T1GCONbits 19 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_getSoftRX 408 0 CODE 0 text31 dist/default/production\Emitter.X.production.obj
+_PORTAbits C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 3E 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 3E 0 CODE 0 init -
+IOCAF5_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 28 0 BANK0 1 nvBANK0 dist/default/production\Emitter.X.production.obj
+___wmul 224 0 CODE 0 text4 dist/default/production\Emitter.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_PR2 1B 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__size_of_TMR0_ISR 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_TMR1_ISR 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_TMR0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_outputStatus 79 0 COMMON 1 bssCOMMON dist/default/production\Emitter.X.production.obj
+__pnvCOMMON 77 0 COMMON 1 nvCOMMON dist/default/production\Emitter.X.production.obj
+__CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_TMR0_DefaultInterruptHandler 474 0 CODE 0 text30 dist/default/production\Emitter.X.production.obj
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+_ECCP1AS 295 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_DSM_ModulationStart 46C 0 CODE 0 text21 dist/default/production\Emitter.X.production.obj
+_TMR1_CallBack 3BE 0 CODE 0 text24 dist/default/production\Emitter.X.production.obj
+_SYSTEM_Initialize 25C 0 CODE 0 text5 dist/default/production\Emitter.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\Emitter.X.production.obj
+_IOCAFbits 393 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_IOCANbits 392 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_IOCAPbits 391 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_PIE1bits 91 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR0_ISR 344 0 CODE 0 text28 dist/default/production\Emitter.X.production.obj
+_TMR1_ISR 3E6 0 CODE 0 text23 dist/default/production\Emitter.X.production.obj
+__ptext10 460 0 CODE 0 text10 dist/default/production\Emitter.X.production.obj
+__ptext11 416 0 CODE 0 text11 dist/default/production\Emitter.X.production.obj
+__ptext12 2FC 0 CODE 0 text12 dist/default/production\Emitter.X.production.obj
+__ptext13 422 0 CODE 0 text13 dist/default/production\Emitter.X.production.obj
+__ptext14 292 0 CODE 0 text14 dist/default/production\Emitter.X.production.obj
+__ptext15 42E 0 CODE 0 text15 dist/default/production\Emitter.X.production.obj
+__ptext16 43A 0 CODE 0 text16 dist/default/production\Emitter.X.production.obj
+__ptext17 360 0 CODE 0 text17 dist/default/production\Emitter.X.production.obj
+__ptext18 378 0 CODE 0 text18 dist/default/production\Emitter.X.production.obj
+__ptext19 390 0 CODE 0 text19 dist/default/production\Emitter.X.production.obj
+__ptext20 3F8 0 CODE 0 text20 dist/default/production\Emitter.X.production.obj
+__ptext21 466 0 CODE 0 text21 dist/default/production\Emitter.X.production.obj
+__ptext23 3E6 0 CODE 0 text23 dist/default/production\Emitter.X.production.obj
+__ptext24 3BE 0 CODE 0 text24 dist/default/production\Emitter.X.production.obj
+__ptext25 470 0 CODE 0 text25 dist/default/production\Emitter.X.production.obj
+__ptext26 104 0 CODE 0 text26 dist/default/production\Emitter.X.production.obj
+__ptext27 326 0 CODE 0 text27 dist/default/production\Emitter.X.production.obj
+__ptext28 344 0 CODE 0 text28 dist/default/production\Emitter.X.production.obj
+__ptext29 66 0 CODE 0 text29 dist/default/production\Emitter.X.production.obj
+__ptext30 472 0 CODE 0 text30 dist/default/production\Emitter.X.production.obj
+__ptext31 408 0 CODE 0 text31 dist/default/production\Emitter.X.production.obj
+__end_of_PIN_MANAGER_Initialize 2C8 0 CODE 0 text14 dist/default/production\Emitter.X.production.obj
+__end_of_TMR0_Initialize 326 0 CODE 0 text12 dist/default/production\Emitter.X.production.obj
+_BAUDCON 19F 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_object 2F 0 BANK0 1 bssBANK0 dist/default/production\Emitter.X.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 19E 0 CODE 0 maintext dist/default/production\Emitter.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_softUartReady 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_TMR0_ISR 360 0 CODE 0 text28 dist/default/production\Emitter.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_ISR 3F8 0 CODE 0 text23 dist/default/production\Emitter.X.production.obj
+_initSoftUart 3A8 0 CODE 0 text3 dist/default/production\Emitter.X.production.obj
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+_LATAbits 10C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_softUart 7A 0 COMMON 1 bssCOMMON dist/default/production\Emitter.X.production.obj
+_TMR0_SetInterruptHandler 422 0 CODE 0 text13 dist/default/production\Emitter.X.production.obj
+stackhi 20EF 0 ABS 0 - C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+stacklo 2014 0 ABS 0 - C:\Users\Embedded\AppData\Local\Temp\sdks.obj
+_OSCTUNE 98 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production\Emitter.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits 11 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_softUartReady 45A 0 CODE 0 text1 dist/default/production\Emitter.X.production.obj
+__Lend_init 3E 0 CODE 0 end_init -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 5E 0 CODE 0 cinit dist/default/production\Emitter.X.production.obj
+_TMR0_Initialize 2FC 0 CODE 0 text12 dist/default/production\Emitter.X.production.obj
+__size_of_TMR1_CallBack 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hintentry 3E 0 CODE 0 intentry -
+__size_of_initSoftUart 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+_PSTR1CON 296 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+TMR1_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_softUartRead 444 0 CODE 0 text2 dist/default/production\Emitter.X.production.obj
+__ptext1 454 0 CODE 0 text1 dist/default/production\Emitter.X.production.obj
+__ptext2 444 0 CODE 0 text2 dist/default/production\Emitter.X.production.obj
+__ptext3 3A8 0 CODE 0 text3 dist/default/production\Emitter.X.production.obj
+__ptext4 224 0 CODE 0 text4 dist/default/production\Emitter.X.production.obj
+__ptext5 25C 0 CODE 0 text5 dist/default/production\Emitter.X.production.obj
+__ptext6 44C 0 CODE 0 text6 dist/default/production\Emitter.X.production.obj
+__ptext7 3D4 0 CODE 0 text7 dist/default/production\Emitter.X.production.obj
+__ptext8 45A 0 CODE 0 text8 dist/default/production\Emitter.X.production.obj
+__ptext9 2C8 0 CODE 0 text9 dist/default/production\Emitter.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__end_of_initSoftUart 3BE 0 CODE 0 text3 dist/default/production\Emitter.X.production.obj
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+TMR1_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_Initialize 2FC 0 CODE 0 text9 dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_StartTimer 466 0 CODE 0 text10 dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_WriteTimer 344 0 CODE 0 text27 dist/default/production\Emitter.X.production.obj
+__end_of_TMR1_CallBack 3D4 0 CODE 0 text24 dist/default/production\Emitter.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_TMR0_CustomISR 66 0 CODE 0 text29 dist/default/production\Emitter.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+EUSART_Write@txData 20 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+__end_of__initialization 5E 0 CODE 0 cinit dist/default/production\Emitter.X.production.obj
+__end_of_EPWM_Initialize 390 0 CODE 0 text18 dist/default/production\Emitter.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+_DSM_Initialize 390 0 CODE 0 text19 dist/default/production\Emitter.X.production.obj
+_timer0ReloadVal 2E 0 BANK0 1 nvBANK0 dist/default/production\Emitter.X.production.obj
+__end_of_IOCAF5_SetInterruptHandler 43A 0 CODE 0 text15 dist/default/production\Emitter.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+_timer1ReloadVal 77 0 COMMON 1 nvCOMMON dist/default/production\Emitter.X.production.obj
+__size_of_softUartRead 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR1_DefaultInterruptHandler 470 0 CODE 0 text25 dist/default/production\Emitter.X.production.obj
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Emitter.X.production.obj
+__Hend_init 42 0 CODE 0 end_init -
+__size_of_TMR0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_dimmLevel 7B 0 COMMON 1 dataCOMMON dist/default/production\Emitter.X.production.obj
+__end_of_main 224 0 CODE 0 maintext dist/default/production\Emitter.X.production.obj
+_MDSRC 39D 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_RCREG 199 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_RCSTA 19D 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_T1CON 18 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_T2CON 1C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR1H 17 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TMR1L 16 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TXREG 19A 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_TXSTA 19E 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_TMR1_Initialize 2C8 0 CODE 0 text9 dist/default/production\Emitter.X.production.obj
+_TMR1_StartTimer 460 0 CODE 0 text10 dist/default/production\Emitter.X.production.obj
+_TMR1_WriteTimer 326 0 CODE 0 text27 dist/default/production\Emitter.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_softUartRead 44C 0 CODE 0 text2 dist/default/production\Emitter.X.production.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+_WDT_Initialize 44C 0 CODE 0 text6 dist/default/production\Emitter.X.production.obj
+_CCP1CON 293 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\Emitter.X.production.obj
+__end_of_TMR0_CustomISR 104 0 CODE 0 text29 dist/default/production\Emitter.X.production.obj
+__end_of_OSCILLATOR_Initialize 444 0 CODE 0 text16 dist/default/production\Emitter.X.production.obj
+__initialization 42 0 CODE 0 cinit dist/default/production\Emitter.X.production.obj
+_EPWM_Initialize 378 0 CODE 0 text18 dist/default/production\Emitter.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__pbssBANK0 2F 0 BANK0 1 bssBANK0 dist/default/production\Emitter.X.production.obj
+__pdataCOMMON 7B 0 COMMON 1 dataCOMMON dist/default/production\Emitter.X.production.obj
+_T2CONbits 1C 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\Emitter.X.production.obj
+__end_of_DSM_Initialize 3A8 0 CODE 0 text19 dist/default/production\Emitter.X.production.obj
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\Emitter.X.production.obj
+_TMR1_SetInterruptHandler 416 0 CODE 0 text11 dist/default/production\Emitter.X.production.obj
+_TMR1_InterruptHandler 2A 0 BANK0 1 nvBANK0 dist/default/production\Emitter.X.production.obj
+_OSCILLATOR_Initialize 43A 0 CODE 0 text16 dist/default/production\Emitter.X.production.obj
+__end_of_TMR2_Initialize 3E6 0 CODE 0 text7 dist/default/production\Emitter.X.production.obj
+__end_of_TMR2_StartTimer 460 0 CODE 0 text8 dist/default/production\Emitter.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 D 1
+cstackBANK0 1 20 20 14 1
+intentry 0 4 8 236 2
+reset_vec 0 0 0 2 2
+config 0 8007 1000E 2 2
